@@ -1,23 +1,24 @@
 language: java
-
+  
 jdk:
-    - oraclejdk8
+  - oraclejdk8
 
 before_install: 
     - sudo apt-get -qq update
     - sudo apt-get install python3.5
-
-install:
-  - pip install -r requirements.txt
 
 branches:
   only:
      - master
      - desenvolvimento
 
-addons: 
-    sonarqube:
-        token:9ea38151981811489476381738d2cfb17a2fc66b
-
+addons:
+  sonarqube:
+    token: 9ea38151981811489476381738d2cfb17a2fc66b
+    
 script:
+  - mvn test -B
   - sonar-scanner
+
+notifications:
+slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
