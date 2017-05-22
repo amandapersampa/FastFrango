@@ -1,4 +1,6 @@
 language: java
+
+sudo: required
   
 jdk:
   - oraclejdk8
@@ -11,8 +13,11 @@ branches:
 addons:
   sonarqube:
     token: 9ea38151981811489476381738d2cfb17a2fc66b
+
+install: pip install -r requirements.txt
     
 script:
+  - pytest
   - sonar-scanner
 
 notifications:
