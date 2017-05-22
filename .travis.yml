@@ -14,7 +14,7 @@ addons:
   sonarqube:
     token: 9ea38151981811489476381738d2cfb17a2fc66b
 
-install: pip install -r requirements.txt
+install: sudo pip install -r requirements.txt
     
 script:
   - pytest
