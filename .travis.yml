@@ -13,7 +13,6 @@ addons:
     token: 9ea38151981811489476381738d2cfb17a2fc66b
     
 script:
-  - mvn test -B
   - sonar-scanner
 
 notifications:
