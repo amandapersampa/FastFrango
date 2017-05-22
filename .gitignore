@@ -1,4 +1,8 @@
 
 \.idea/
 
-build/bdist\.linux-x86_64/wininst/PURELIB/
+build/
+
+dist/
+
+fastFrango/__pycache__/
