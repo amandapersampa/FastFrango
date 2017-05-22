@@ -1,6 +1,11 @@
-dist: trusty
+language: java
 
-sudo: required
+jdk:
+    - oraclejdk8
+
+before_install: 
+    - sudo apt-get -qq update
+    - sudo apt-get install python3.5
 
 install:
   - pip install -r requirements.txt
@@ -10,7 +15,7 @@ branches:
      - master
      - desenvolvimento
 
-addons:
+addons: 
     sonarqube:
         token:9ea38151981811489476381738d2cfb17a2fc66b
 
