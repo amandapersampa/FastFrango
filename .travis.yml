@@ -12,8 +12,7 @@ addons:
   sonarqube:
     token: 076efcd77d46ccc1abb6bd17ab4b0db7ea5f13c6
 
-install: 
-  - pip install .
+install:
   - pip install -r requirements.txt
       
 script:
