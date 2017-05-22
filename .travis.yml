@@ -1,7 +1,18 @@
-language: python
-python:
-    - 3.5
+dist: trusty
+
+sudo: required
+
 install:
   - pip install -r requirements.txt
+
+branches:
+  only:
+     - master
+     - desenvolvimento
+
+addons:
+    sonarqube:
+        token:9ea38151981811489476381738d2cfb17a2fc66b
+
 script:
   - sonar-scanner
