@@ -17,7 +17,7 @@ install:
   - sudo python setup.py sdist
       
 script:
-  - sudo sonar-scanner -X
+  - sonar-scanner
 
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
