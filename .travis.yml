@@ -13,11 +13,11 @@ addons:
     token: 076efcd77d46ccc1abb6bd17ab4b0db7ea5f13c6
 
 install:
-  - pip install -r requirements.txt
+  - sudo pip install -r requirements.txt
+  - sudo python setup.py sdist
       
 script:
-  - python setup.py sdist
-  #- sonar-scanner -X
+  - sudo sonar-scanner -X
 
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
