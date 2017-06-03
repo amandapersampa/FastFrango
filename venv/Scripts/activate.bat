@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\amand\OneDrive\Documentos\GitHub\FastFrango\venv"
+set "VIRTUAL_ENV=C:\Users\DOUGLA~1\PYCHAR~1\FRANGU~1\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
