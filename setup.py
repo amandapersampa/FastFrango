@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='fastFrango',
-    packages=['fastFrango'],
+    packages=['app'],
     version='0.0.1',
     description='Sistema para gerencia de um restaurante',
     maintainer='Amanda Sampaio',
