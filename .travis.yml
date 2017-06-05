@@ -10,6 +10,9 @@ branches:
 install:
   - sudo pip install -r requirements.txt
   - sudo python setup.py sdist
+  
+script:
+  pytest
 
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
