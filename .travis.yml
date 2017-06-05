@@ -17,9 +17,6 @@ addons:
 install:
   - sudo pip install -r requirements.txt
   - sudo python setup.py sdist
-      
-script:
-  - sonar-scanner
 
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
