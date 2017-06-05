@@ -15,8 +15,8 @@ addons:
     token: 0855d3e63fa5e63ec73c572bd98abf5a445dc737
   
 script:
-  pytest
-  sonar-scanner
+  - pytest
+  - sonar-scanner
   
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
