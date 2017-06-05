@@ -1,18 +1,16 @@
 language: java
-  
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 branches:
   only:
-     - master
-     - desenvolvimento
+  - master
+  - desenvolvimento
 install:
-  - sudo pip install -r requirements.txt
-  - sudo python setup.py sdist
-  
-script:
-  pytest
-
-notifications:
+- sudo pip install -r requirements.txt
+- sudo python setup.py sdist
+script: pytest
+notifications: 
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
+env:
+  global:
+    secure: atsJ89dgh1+iMAHNW/7D7cMwGSEajaDFsLQr0zE1MIGM6yTJubLWRzWaQAlAmGMw3/bmUOzi3pjo1eDJY7XcbxV/8CK51/qKP3HJ/kXQLl2AhjClSppno7Mhs/LyKiEs19Kh4ywG8rywQAJoD7CFS82wp7R7m71OgTGfaoY+cKrOzgFlpBaaKjAeVwDEIi0o3oS680vfaC5b5hYqSlAzzoJycYd0ll5i9wlJxS/Hvo3+gH6dSjatI2gItn+KBXkbt8Xnjhbi9huBzigMbKDjqvFBwhE4zMauQ7i0ZzVXmhEzEBQXNRwEQVcKIJ2GST8Wlua7TBf6QZ2WmeCYiU42nDtal5wEAeOXZ4doWCWof7S9R0NX7A9OCTV/sNyG3S2xd4VRjRqBon1UBNb4LBLm20wdBiuEQThLCNxruqdnr3MljJNiLKmv5vCPcnSNke/UHSXYwJBfwjd0EDV9aw8PIvxyA72yyDgxNUiStdXxjcJRioz5aVpX3I9ltkl9FhIr387Tbhx77HLJFUkSSllMLLnm9aM20n7IhwjDZFcUqpktlGQdfgQGB87c1ckD7B4G3JrnsHZhg6Y1BN2xOdfYzKfBduM/CEk+rsXdg9jhFaYyLYq+06BNyKYXdKHmjkgaWkEY+ZsG7l4wbMKl8rtAZZ+u/v6PubikolOthWYhfS4=
