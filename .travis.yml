@@ -16,6 +16,7 @@ addons:
   
 script:
   pytest
-
+  sonar-scanner
+  
 notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
