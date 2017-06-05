@@ -6,10 +6,18 @@ branches:
   - master
   - desenvolvimento
 install:
-- sudo pip install -r requirements.txt
-- sudo python setup.py sdist
-script: pytest
-notifications: 
+  - sudo pip install -r requirements.txt
+  - sudo python setup.py sdist
+addons:
+  organization: amandapersampa-github
+  sonarqube:
+    token: 0855d3e63fa5e63ec73c572bd98abf5a445dc737
+  
+script:
+  - pytest
+  - sonar-scanner
+  
+notifications:
 slack: trabalho-de-les-20171:VPGJMy9q3QpahFd5WXIQ6xTG
 env:
   global:
